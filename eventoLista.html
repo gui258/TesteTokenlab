@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Lista de eventos</title>
+
+        <meta chatset="UTF-8">
+        <meta name="Lista de eventos" content="Lista de eventos do usuario ativo">
+        <meta name="author" content="Guilherme Garcia Mancuso">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./CSS/geral.css">
+        <link rel="stylesheet" href="./CSS/eventoLista.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="center"><p><h1>Calendário de eventos</h1></p></div>
+        </header>
+
+        <main>
+            <section>
+                <form class="center">
+                    <label for="date">Data</label>
+                    <input type="date" id="date">
+
+                    <label for="startTime">Inicio</label>
+                    <input type="time" id="startTime">
+
+                    <label for="endTime">Fim</label>
+                    <input type="time" id="endTime">
+
+                    <label for="description">Descrição</label>
+                    
+                    <input type="text" id="description">
+                    <!--<button onclick="adicionar()">Adicionar evento</button>-->
+                    <input type="button" onclick="adicionar()" value="Adicionar">
+                </form>
+            </section>
+            
+            <div id="teste">
+
+            </div>
+            <table id="lista">
+                <tr><th>Data</th> <th>Horário de inicio</th> <th>Horário de término</th> <th>Descrição</th> <th>Modificar</th> <th>Excluir</th></tr>
+                <tr><td>1</td> <td>1</td> <td>1</td> <td>1</td> <td><input type="button"></td> <td><input type="button"></td></tr>
+            </table>
+
+ 
+        </main>
+
+        <footer>
+            <p class="center">Site feito por Guilherme Garcia Mancuso</p>
+        </footer>
+
+        <!--Carregando o script por ultimo para otimizar o tempo de carregamento da pagina-->
+        <script src="./JS/lista.js"></script>
+    </body>
+</html>

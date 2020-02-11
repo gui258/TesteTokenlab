@@ -1,0 +1,31 @@
+body{
+    background-color: lightgrey;
+}
+
+header{
+    background-color: darkgrey;
+
+    padding: 6px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+
+main{
+    background-color: gray;
+
+    padding: 12px;
+    margin: auto;
+}
+
+footer{
+    background-color: darkgrey;
+
+    padding: 3px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.center {
+    text-align: center;
+}

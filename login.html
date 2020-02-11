@@ -1,0 +1,46 @@
+<!--Instruções para o uso estão no arquivo instruções.txt-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+
+        <meta chatset="UTF-8">
+        <meta name="Login" content="Pagina de login do usuário.">
+        <meta name="Author" content="Guilherme G. Mancuso">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./CSS/geral.css">
+        <link rel="stylesheet" href="./CSS/login.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="center"><p><h1>Calendário de eventos</h1></p></div>
+        </header>
+        <main class="center">
+            <div><p><b>Entrar na conta.</b></p></div>
+
+            <form name="Login" method="POST" id="login">
+                <div>
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" placeholder="Usuário">
+                </div>
+
+                <div>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" placeholder="Senha">
+                </div>
+                
+                <input type="button" onclick="return login()" name="go" value="Entrar">
+            </form>
+        </main>
+
+        <footer>
+            <p class="center">Site feito por Guilherme Garcia Mancuso</p>
+        </footer>
+
+        <!--Colocando o script para ser carregado por ultimo para otimizar o tempo de carregamento da pagina-->
+        <script src="./JS/login.js"></script>
+    </body>
+</html>
